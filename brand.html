@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카페</title>
+    <link rel="stylesheet" href="brand.css">
+    <link rel="stylesheet" href="menu.css">
+<!-- 폰트 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+<!-- 아이콘 -->
+<script src="https://unpkg.com/feather-icons"></script>
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="dive.html">dive into you</a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="./brand.html">브랜드</a></li>
+                    <input type="checkbox" id="click" class="burger-input"/>
+                    <li class="burger">메뉴</li>
+                    <nav>
+                        <ul class="sub">
+                            <li><a href="./mainmenu.html">음료</a></li>
+                            <li><a href="mainmenu.html#me-sub">베이커리</a></li>
+                        </ul>
+                    </nav>
+                <li><a href="location.html">매장</a></li>
+            </ul>
+        </div>
+    </header>
+<div class="story">
+    <div class="story-txt">
+        <h1>
+            dive into you
+        </h1>
+        <p>
+            <a href="https://www.instagram.com/" target="_blank"><i data-feather="instagram" ></i></a>
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Laborum, voluptates? Numquam tenetur ex quas, neque aut totam enim 
+            placeat dolore iure sunt dolor at eum 
+            distinctio alias voluptatem velit voluptates!
+
+    </div>
+    <div class="story-img">
+        <img src="img/3d-bread.png" alt="">
+    </div>
+</div>
+
+
+<div class="into">
+    <div class="typing">
+        <h1 class="text"></h1>
+    </div>
+    <div class="typing">
+       <h1 class="text2">
+        into you
+       </h1>
+    </div>
+    <div class="into-img">
+        <img src="img/into.png" alt="">
+    </div>
+</div>
+<footer>
+    <span>ⓒ 2024. DIVE INTO YOU All rights reserved.</span>
+    <div class="call">
+        <span>전화 : 02-1234-1234</span>
+        <span>인스타그램 : @instagram</span>
+        <br>
+        <span>위치 : 서울특별시 용산구 양녕로 445</span>
+    </div>
+</footer>
+
+
+
+
+
+</body>
+  <!--  -->
+  <script>
+    const $text = document.querySelector(".typing .text");
+    
+    // 글자 모음
+    const letters = [
+    "I'll dive"
+    ];
+    
+    // 글자 입력 속도
+    const speed = 100;
+    let i = 0;
+    
+    // 타이핑 효과
+    const typing = async () => {  
+      const letter = letters[i].split("");
+      
+      while (letter.length) {
+        await wait(speed);
+        $text.innerHTML += letter.shift(); 
+      }
+      
+      // 잠시 대기
+      await wait(800);
+      
+      // 지우는 효과
+      remove();
+    }
+    
+    // 글자 지우는 효과
+    const remove = async () => {
+      const letter = letters[i].split("");
+      
+      while (letter.length) {
+        await wait(speed);
+        
+        letter.pop();
+        $text.innerHTML = letter.join(""); 
+      }
+      
+      // 다음 순서의 글자로 지정, 타이핑 함수 다시 실행
+      i = !letters[i+1] ? 0 : i + 1;
+      typing();
+    }
+    
+    // 딜레이 기능 ( 마이크로초 )
+    function wait(ms) {
+      return new Promise(res => setTimeout(res, ms))
+    }
+    
+    // 초기 실행
+    setTimeout(typing, 1500);
+         </script>
+         <!-- 아이콘 -->
+         <script>
+            feather.replace()
+          </script>
+    
+</html>

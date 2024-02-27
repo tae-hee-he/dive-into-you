@@ -1,0 +1,120 @@
+
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    font-size: 20px;
+}
+[class^="title"]{
+    text-align: center;
+    background-color:  rgb(249, 242, 216);
+    padding: 130px 0 50px 0;
+    font-family: 'NanumSquareNeo-Variable';
+    font-size: 1.1rem;
+}
+.title>p, .title2>p{
+    display: inline;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #000 ;
+}
+.map{
+    background-color:   rgb(249, 242, 216);
+    display: flex;
+    padding-bottom: 50px;
+    justify-content: center;
+}
+.map>iframe{
+    display: block;
+    width: 600px;
+    /* margin: 0 auto; */
+}
+.load{
+    
+    font-family: 'NanumSquareNeo-Variable';
+    padding: 150px 50px 50px 50px;
+}
+.load>p{
+    font-size: 0.9rem;
+    line-height: 1.9;
+}
+.load>p:last-child{
+    font-size: 0.7rem;
+    padding-top: 20px;
+    color: rgb(85, 85, 163);
+}
+.cafe{
+    padding: 0px 70px 30px;
+    text-align: center;
+}
+[class^="cafe-img"]{
+    width: 300px;
+    height: 250px;
+   background:url(img/cafe1.jpg);
+   background-size: cover;
+   background-position: 0px -100px;
+   background-repeat: no-repeat;
+}
+.cafe-img2{
+    background:url(img/cafe2.jpg);
+    background-size: cover;
+    background-position: 0px -100px;
+    background-repeat: no-repeat;
+}
+.cafe-img3{
+    background:url(img/cafe3.jpg);
+    background-size: cover;
+    background-position: 0px -100px;
+    background-repeat: no-repeat;
+}
+.cafe-img4{
+    background:url(img/cafe4.jpg);
+    background-size: cover;
+    background-position: 0px -100px;
+    background-repeat: no-repeat;
+}
+.cafe>p{
+    font-size: 0.78rem;
+    font-family: 'NanumSquareNeo-Variable';
+    padding: 5px 0;
+}
+.cafe>p:nth-child(3){
+    font-size: 0.6rem;
+    padding-bottom: 15px;
+}
+.branch{
+    width: 880px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap:wrap;
+}
+.title2{
+    background: none;
+    padding-top: 110px;
+}
+.btn>a{
+    background-color: rgb(249, 242, 216);
+    padding: 6px 10px;
+    font-size: 0.7rem;
+    text-decoration: none;
+    color: #000;
+    transition: 0.5s ease-in-out;
+    display: inline-block;
+}
+.btn:hover>a{
+    background-color: rgb(247, 200, 106);
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    border-top: solid 1px #787878;
+    padding: 17px 30px;
+  
+}
+footer>span,.call>span{
+    color: #454545;;
+    font-size: 0.7rem;
+    font-family: 'NanumBarunGothic';
+}

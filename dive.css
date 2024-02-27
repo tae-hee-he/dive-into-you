@@ -1,0 +1,148 @@
+@font-face{
+    font-family: 'object';
+    src: url(./font/object\ sans\ font.ttf);
+}
+
+@font-face{
+    font-family: 'speck';
+    src: url(./font/Speck-Display.otf);
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.home{
+    width: 100%;
+   padding-top: 130px;
+   position: relative;
+   background-color:rgb(249, 242, 216);
+}
+.store-img{
+    margin: 0 auto;
+    width: 80%;
+    height: 500px;
+    background-color: blue;
+    overflow: hidden;
+}
+.store-img>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.spot, .call{
+    width: 250px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    animation: size 4s alternate infinite;
+}
+@keyframes size{
+    0%{
+        border-radius: 50%;
+    }
+    35%{
+        border-radius: 50% 0% 50% 0;
+    }
+    70%{
+        border-radius: 0% 50% 0 50%;
+    }
+    100%{
+        border-radius: 50%;
+
+    }
+
+}
+.spot{
+    bottom: 200px;
+    right: 170px;
+}
+.call{
+    bottom: 90px;
+    right: 170px;
+}
+.spot>p, .call>p{
+    font-size: 0.8rem;
+    font-family: 'NanumSquareNeo-Variable';
+    line-height: 100px;
+    text-align: center;
+}
+.time{
+    text-align: center;
+    font-family: 'NanumSquareNeo-Variable';
+    font-size: 0.8rem;
+    padding: 30px 0;
+}
+.banner{
+
+    width: 100%;
+    background-color: rgb(249, 242, 216);
+  
+
+}
+.ban-1, .ban-2, .ban-3{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-color: blueviolet;
+    overflow: hidden;
+    
+}
+.ban-1>img, .ban-2>img, .ban-3>img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+.ani-img{
+    position: absolute;
+    top: 10px;
+    width: 1500px;
+    height: 600px;
+    overflow: hidden;
+}
+.ani-img2{
+    position: absolute;
+    left: 60px;
+    top: 30px;
+    width: 1500px;
+    height: 600px;
+    overflow: hidden;
+}
+.ani-img3{
+    width: 200px;
+    height:240px;
+    position: absolute;
+    left: 450px;
+    top:150px;
+}
+.ani-img3>img{
+    width: 300px;
+    height: 340px;
+    object-fit: cover;
+}
+.ani-img>img, .ani-img2>img{ 
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    border-top: solid 1px #787878;
+    padding: 17px 30px;
+  
+}
+footer>span,.call2>span{
+    color: #454545;;
+    font-size: 0.7rem;
+    font-family: 'NanumBarunGothic';
+}

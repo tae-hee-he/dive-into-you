@@ -1,0 +1,146 @@
+@font-face{
+    font-family: 'speck';
+    src: url(./font/Speck-Display.otf);
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{  
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-image: url(img/cafe.jpg);
+    background-repeat: no-repeat;
+    background-position: 0px -200px;
+background-size: cover;
+  width: 100%;
+  height: 100px;
+}
+
+.logo>a{
+  display: inline-block;
+  text-decoration: none;
+padding-left: 30px;
+    font-family: 'speck';
+    font-size: 3.4rem ;
+    line-height: 4.4rem;
+    height: 100px;
+    color: rgb(0, 0, 0);
+}
+.me-title{
+  padding-top: 10px;
+  font-size: 2.5rem;
+  font-family: 'NanumSquareNeo-Variable';
+  text-align: center;
+  color: #303030;
+}
+#me-sub, .me-sub{
+  background-color:  rgb(249, 242, 216);
+  font-size: 1.5rem;
+  font-family: 'NanumSquareNeo-Variable';
+  padding: 10px 20px;
+  margin-left: 50px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 30px;
+  border: solid #303030 1px;
+}
+.menu>ul{
+    display: flex;
+    padding-top: 5px;
+}
+.menu>ul>li{
+    font-family: 'NanumSquareNeo-Variable';
+    width: 100px;
+    list-style-type: none;
+    padding:20px 20px 0 20px;
+}
+.menu>ul>li>a{
+    text-decoration: none;
+    color: #000;
+    font-size: 0.8rem;
+}
+.menu1, .menu2{
+    padding: 10px 0 130px 0;
+}
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 760px) {
+    .swiper-button-next {
+      right: 20px;
+      transform: rotate(90deg);
+    }
+
+    .swiper-button-prev {
+      left: 20px;
+      transform: rotate(90deg);
+    }
+  }
+  .cafe{
+    border: solid #303030;
+    border-width: 1px 1px 1px 0px;
+    height: 510px;
+    margin: 0 auto;
+  }
+  .coffe-img{
+    margin: 0 auto;
+    width: 400px;
+    height: 440px;
+    overflow: hidden;
+  }
+
+  .coffe-img>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .cafe-text{
+  border-bottom: solid #000 1px;
+  height: 35px;
+  line-height: 35px;
+  }
+  .cafe-text>p, .cafe>div:last-child>p{
+    font-family: 'NanumSquareNeo-Variable';
+  }
+  .cafe>div:last-child{
+    height: 35px;
+    font-size: 0.9rem;
+    border-top: solid #000 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer{
+    display: flex;
+    justify-content: space-between;
+    border-top: solid 1px #787878; 
+    padding: 17px 30px;
+  
+}
+footer>span,.call2>span{
+    color: #454545;;
+    font-size: 0.7rem;
+    font-family: 'NanumBarunGothic';
+}
