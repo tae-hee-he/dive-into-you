@@ -104,6 +104,7 @@ header{
     transition: 0.4s ease-in-out;
 }
 .sub>li>a{
+    display: inline-block;
     font-family: 'NanumSquareNeo-Variable';
     text-decoration: none;
     color: #222;
